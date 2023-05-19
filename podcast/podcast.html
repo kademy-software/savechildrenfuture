@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Music Player</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+ 
+  </head>
+
+  <body>
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+  
+        <h1 class="logo"><a href="index.html">SCF<span>.</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+  
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Tìm Hiểu Cảm Xúc</a></li>
+            <li><a class="nav-link scrollto " href="liveChat.html">Live Chat</a></li>
+            <li><a class="nav-link scrollto" href="#team">Viết Nhật Ký</a></li>
+            <li class="dropdown"><a href="#"><span>Chữa Lành</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Bằng Phim</a></li>
+                <li><a href="#">Bằng Podcast</a></li>
+                <li><a href="#">Bằng Game</a></li>
+                <li><a href="#">Bằng Tập Thể Dục</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+  
+      </div>
+    </header><!-- End Header -->
+    <div class="bg-image"></div>
+    <div class="music-player">
+      <button id="playlist">
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+      <img id="song-image" src="make-me-move.jpg" />
+      <div class="song-details">
+        <p id="song-name">Vực dậy sau những ngày mệt mỏi và mất động lực</p>
+        <p id="song-artist">The Hanoi Chamomile</p>
+      </div>
+      <div class="player-options">
+        <button id="shuffle">
+          <i class="fa-solid fa-shuffle"></i>
+        </button>
+        <button id="prev">
+          <i class="fa-solid fa-backward-step"></i>
+        </button>
+        <button id="play">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="pause" class="hide">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <button id="next">
+          <i class="fa-solid fa-forward-step"></i>
+        </button>
+        <button id="repeat">
+          <i class="fa-solid fa-repeat"></i>
+        </button>
+      </div>
+      <audio id="audio" preload="metadata"></audio>
+      <div id="progress-bar">
+        <div id="current-progress"></div>
+      </div>
+      <div class="time-container">
+        <span id="current-time">0:00</span>
+        <span id="max-duration">0:00</span>
+      </div>
+      <div id="playlist-container" class="hide">
+        <button id="close-button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul id="playlist-songs"></ul>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
