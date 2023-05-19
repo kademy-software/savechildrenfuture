@@ -31,10 +31,10 @@ const songsList = [
     image: "https://tamlytrilieunhc.com/wp-content/uploads/2021/10/met-moi-ap-luc-vi-diem-so-1.jpg",
   },
   {
-    name: "Where We Started",
+    name: "O-",
     link: "where-we-started.mp3",
-    artist: "Lost Sky",
-    image: "where-we-started.jpg",
+    artist: "Những podcast bắt đầu bằng  'O' ",
+    image: "https://cdn.icon-icons.com/icons2/2518/PNG/512/arrow_down_circle_icon_151618.png",
   },
   {
     name: "On & On",
